@@ -1,0 +1,279 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #d4edda;
+    color: #333;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+.corner-image {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8BC34A;
+    color: white;
+}
+
+/* Main Styles */
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+/* Info Container Styles (Öffnungszeiten, Adresse, Telefonnummer) */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex;
+    gap: 15px; /* Reduzierter Abstand zwischen den Boxen */
+    margin-bottom: 15px;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 50px;
+    max-width: 500px;
+    border: 2px solid #8BC34A;
+    padding: 5px; /* Reduziertes Padding */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Hover-Effekt hinzugefügt */
+}
+
+/* Hover-Effekte für Info-Boxen */
+.info-box:hover {
+    transform: scale(1.05); /* Vergrößert die Box beim Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
+    background-color: #e0f8e0; /* Hellgrüner Hintergrund beim Hover-Effekt */
+}
+
+/* Map Container Styles */
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Style für die Leistungsboxen */
+.leistung {
+    border: 2px solid #90ee90; /* Farbe und Dicke des Rahmens (hellgrün) */
+    border-radius: 8px; /* Abgerundete Ecken */
+    padding: 16px; /* Abstand innerhalb des Rahmens */
+    margin: 16px; /* Abstand nach außen */
+    background-color: #f0fff0; /* Hellgrüner Hintergrund der Boxen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Sanfter Übergang für Hover-Effekte */
+}
+
+/* Hover-Effekte für die Leistungsboxen */
+.leistung:hover {
+    transform: scale(1.05); /* Vergrößert die Box beim Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
+}
+
+/* Hintergrundfarbe für den Text innerhalb der Leistungsboxen */
+.leistung p {
+    background-color: #e0f8e0; /* Hellgrüner Hintergrund für den Text */
+    padding: 8px; /* Abstand innerhalb des Textbereichs */
+    border-radius: 4px; /* Abgerundete Ecken für den Textbereich */
+}
+
+/* Style für die Container, die die Leistungsboxen enthalten */
+.leistungen-container {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt den Umbruch der Boxen in die nächste Zeile */
+    gap: 16px; /* Abstand zwischen den Boxen */
+}
+
+/* Sicherstellt, dass jede Box eine bestimmte Breite hat */
+.leistung {
+    flex: 1 1 calc(33.333% - 32px); /* Drei Boxen nebeneinander, minus Abstand */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breitenberechnung */
+}
+
+/* Zusätzliche Gestaltung für den Hauptbereich */
+main {
+    padding: 20px; /* Abstand um den Hauptinhalt */
+    background-color: #fff; /* Hintergrundfarbe für den Hauptbereich auf Weiß */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #d4edda;
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .corner-image {
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Specific Styles for Contact Page */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-box {
+    border: 2px solid #8BC34A;
+    padding: 10px;
+    margin: 10px;
+    transition: transform 0.2s;
+    background-color: #f0fff0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+/* Specific Styles for Contact Form */
+.contact-form-section {
+    background-color: #f0fff0;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #8BC34A;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="submit"] {
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #7cb342;
+}
+	
