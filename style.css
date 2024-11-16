@@ -89,14 +89,14 @@ section {
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Hover-Effekt hinzugefügt */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; 
 }
 
 /* Hover-Effekte für Info-Boxen */
 .info-box:hover {
-    transform: scale(1.05); /* Vergrößert die Box beim Hover-Effekt */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
-    background-color: #e0f8e0; /* Hellgrüner Hintergrund beim Hover-Effekt */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #e0f8e0; 
 }
 
 /* Map Container Styles */
@@ -119,44 +119,43 @@ section {
 
 /* Style für die Leistungsboxen */
 .leistung {
-    border: 2px solid #90ee90; /* Farbe und Dicke des Rahmens (hellgrün) */
-    border-radius: 8px; /* Abgerundete Ecken */
-    padding: 16px; /* Abstand innerhalb des Rahmens */
-    margin: 16px; /* Abstand nach außen */
-    background-color: #f0fff0; /* Hellgrüner Hintergrund der Boxen */
-    transition: transform 0.3s, box-shadow 0.3s; /* Sanfter Übergang für Hover-Effekte */
+    border: 2px solid #90ee90;
+    border-radius: 8px;
+    padding: 16px; 
+    margin: 16px; 
+    background-color: #f0fff0;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Hover-Effekte für die Leistungsboxen */
 .leistung:hover {
-    transform: scale(1.05); /* Vergrößert die Box beim Hover-Effekt */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* Hintergrundfarbe für den Text innerhalb der Leistungsboxen */
 .leistung p {
-    background-color: #e0f8e0; /* Hellgrüner Hintergrund für den Text */
-    padding: 8px; /* Abstand innerhalb des Textbereichs */
-    border-radius: 4px; /* Abgerundete Ecken für den Textbereich */
+    background-color: #e0f8e0; 
+    padding: 8px; 
+    border-radius: 4px; 
 }
 
 /* Style für die Container, die die Leistungsboxen enthalten */
 .leistungen-container {
     display: flex;
-    flex-wrap: wrap; /* Erlaubt den Umbruch der Boxen in die nächste Zeile */
-    gap: 16px; /* Abstand zwischen den Boxen */
+    flex-wrap: wrap;
+    gap: 16px; 
 }
 
 /* Sicherstellt, dass jede Box eine bestimmte Breite hat */
 .leistung {
-    flex: 1 1 calc(33.333% - 32px); /* Drei Boxen nebeneinander, minus Abstand */
-    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Breitenberechnung */
-}
+    flex: 1 1 calc(33.333% - 32px); 
+    box-sizing: border-box; 
 
 /* Zusätzliche Gestaltung für den Hauptbereich */
 main {
-    padding: 20px; /* Abstand um den Hauptinhalt */
-    background-color: #fff; /* Hintergrundfarbe für den Hauptbereich auf Weiß */
+    padding: 20px; 
+    background-color: #fff; 
 }
 
 /* Footer Styles */
@@ -170,7 +169,7 @@ footer {
     width: 100%;
 }
 
-/* Media Queries for Responsive Design */
+
 @media (max-width: 600px) {
     .corner-image {
         width: 60px;
@@ -196,7 +195,7 @@ footer {
     }
 }
 
-/* Specific Styles for Contact Page */
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +219,7 @@ footer {
     transform: scale(1.05);
 }
 
-/* Specific Styles for Contact Form */
+
 .contact-form-section {
     background-color: #f0fff0;
     padding: 20px;
